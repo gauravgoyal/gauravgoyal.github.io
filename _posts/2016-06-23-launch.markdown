@@ -1,0 +1,11 @@
+---
+title:  "Get Set Go!"
+subtitle: "Launch Anecdotes!"
+author: "Gaurav"
+avatar: "img/authors/gaurav.jpg"
+image: "img/a.jpg"
+date:   2016-06-23 12:12:12
+---
+
+### What is this?
+Woohoo!!
