@@ -7,6 +7,15 @@ image: "img/a.jpg"
 date:   2016-06-23 12:12:12
 comments: true
 ---
+Here we go.. my long awaited DNS finally got engaged with an IP.
 
-### What is this?
-Woohoo!!
+## What's this?
+Umm.. Anecdotes :)
+
+## How it happened?
+Well, I was sitting ideal from past few days and surfing through web in search of some interesting tasks. Suddenly, a thought crossed my mind that I purchased a domain few months back. Why not build it, and this is how it happened.
+
+Well, this is for now. I had some wonderful time creating this site, and learned about few new things. I'll share them in my next post.
+
+Till then bbye :)
+
