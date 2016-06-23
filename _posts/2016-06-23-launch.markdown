@@ -5,6 +5,7 @@ author: "Gaurav"
 avatar: "img/authors/gaurav.jpg"
 image: "img/a.jpg"
 date:   2016-06-23 12:12:12
+comments: true
 ---
 
 ### What is this?

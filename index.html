@@ -80,6 +80,7 @@ layout: compress
                                 <span class="meta__date">{{ post.date | date: "%Y-%m-%d" }}</span>
                             </div>
                             {{ post.content }}
+                            {% if post.comments %}{% include disqus.html %}{% endif %}
                         </div>
                     </div>
                 </div>
