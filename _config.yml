@@ -1,0 +1,7 @@
+# Site settings
+title: The Last Anectode
+description: Never ending intresting stories and encounters
+keywords: Stories, Blogs, Encounters, Fun
+author: Gaurav Goyal
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "" # the base hostname & protocol for your site
