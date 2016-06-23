@@ -29,7 +29,7 @@ layout: compress
 <body class="body">
 <div class="container">
     <header class="header">
-        <div class="menu-bar">
+        <div id="showMenu" class="menu-bar" onclick="showMenu()">
             <i class="fa fa-bars fa-3x" aria-hidden="true"></i>
         </div>
         <h1>The Last Anecdote<span>Intresting Tales, Stories and Anecdotes</span></h1>
@@ -40,6 +40,14 @@ layout: compress
             <a href="https://www.linkedin.com/in/ggoyal92" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
         </nav>
     </header>
+    <div id="show-navigation" class="navigation-wrapper" onclick="hideMenu()">
+        <div class="close-navigation"><i class="fa fa-times" aria-hidden="true"></i></div>
+    <nav class="navigation">
+        <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+        <a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i>About</a>
+        <a href="#"><i class="fa fa-rss" aria-hidden="true"></i>Blogs</a>
+    </nav>
+    </div>
     <div class="content">
         <!-- trianglify pattern container -->
         <div class="pattern pattern--hidden"></div>
@@ -88,5 +96,6 @@ layout: compress
 <script src="js/vendors/cash.min.js"></script>
 <script src="js/card-modern-blog.js"></script>
 <script src="js/modern-blog.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
