@@ -78,3 +78,31 @@
       margin-left: -60px;
     }
 }
+
+.card__copy ul a {
+  cursor: pointer ;
+  color: blue ;
+  font-size: 1em;
+}
+
+.card__copy ul a:hover, .card__copy ul a:focus {
+  font-size: 1.2rem;
+  color: orange ;
+  text-decoration: underline ;
+}
+
+.card__copy .highlighter-rouge .highlight {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+code.highlighter-rouge {
+  background-color: #f8f8f8;
+  overflow: auto;
+  padding: 6px 10px;
+}
