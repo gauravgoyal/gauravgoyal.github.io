@@ -4,7 +4,7 @@ subtitle: "Change in the era of editors and IDE's."
 author: "Gaurav"
 avatar: "img/authors/gaurav.jpg"
 image: "img/ST.jpg"
-date:   2016-06-23 12:12:12
+date:   2016-06-30 02:12:12
 comments: true
 ---
 
