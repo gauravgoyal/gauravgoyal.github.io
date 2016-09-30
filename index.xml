@@ -11,23 +11,23 @@
     
     <item>
       <title>Sublime Text 3 Setup for Drupal</title>
-      <link>http://thelastanecdote.com/blog/sublime/</link>
+      <link>http://thelastanecdote.com/blog/sublime-text-drupal-setup/</link>
       <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://thelastanecdote.com/blog/sublime/</guid>
+      <guid>http://thelastanecdote.com/blog/sublime-text-drupal-setup/</guid>
       <description>
 
-&lt;h2 id=&#34;download-sublime-text:156810766b2e870ff15329801f943416&#34;&gt;Download Sublime text.&lt;/h2&gt;
+&lt;h2 id=&#34;download-sublime-text:e880b6c8609ceda26d24953959211e17&#34;&gt;Download Sublime text.&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Download latest version / build of sublime text from &lt;a href=&#34;https://www.sublimetext.com/3&#34;&gt;website&lt;/a&gt;. At the time of writing this blog we have build 3114 of ST3.&lt;/li&gt;
 &lt;li&gt;Install &lt;a href=&#34;https://packagecontrol.io/installation&#34;&gt;Package Installer&lt;/a&gt;, this is the most important thing for sublime text.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;plugins:156810766b2e870ff15329801f943416&#34;&gt;Plugins:&lt;/h2&gt;
+&lt;h2 id=&#34;plugins:e880b6c8609ceda26d24953959211e17&#34;&gt;Plugins:&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;h3 id=&#34;sublime-php-companion:156810766b2e870ff15329801f943416&#34;&gt;Sublime PHP Companion&lt;/h3&gt;
+&lt;li&gt;&lt;h3 id=&#34;sublime-php-companion:e880b6c8609ceda26d24953959211e17&#34;&gt;Sublime PHP Companion&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;An important thing which sets IDE&amp;rsquo;s apart from text editors is there goto definition functionality which was kind of missing in sublime text 2 but now it is included into the core of ST3.&lt;/li&gt;
@@ -37,7 +37,7 @@
 &lt;li&gt;&lt;em&gt;Until you create a project, sublime&amp;rsquo;s inbuilt indexing does not works.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;h3 id=&#34;sublime-php-cs:156810766b2e870ff15329801f943416&#34;&gt;Sublime PHP CS&lt;/h3&gt;
+&lt;li&gt;&lt;h3 id=&#34;sublime-php-cs:e880b6c8609ceda26d24953959211e17&#34;&gt;Sublime PHP CS&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Install &lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs&#34;&gt;sublime phpcs&lt;/a&gt;.&lt;/li&gt;
@@ -49,7 +49,7 @@ you may end up in lots of issues.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;We can do the sniffing work by creating a build but PHP CS comes with lots of things which works out of the box.&lt;/em&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;h3 id=&#34;xdebug-client:156810766b2e870ff15329801f943416&#34;&gt;Xdebug Client&lt;/h3&gt;
+&lt;li&gt;&lt;h3 id=&#34;xdebug-client:e880b6c8609ceda26d24953959211e17&#34;&gt;Xdebug Client&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;Xdebug&lt;/code&gt; is a brilliant tool for debugging and it seamlessly integrates with Sublime Text.&lt;/li&gt;
@@ -92,7 +92,7 @@ you may end up in lots of issues.&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;NOTE:&lt;/em&gt; You can configure configure &lt;code&gt;Xdebug&lt;/code&gt; to work remotely also and locally also. Depending on your need configuration will change.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;h3 id=&#34;other-plug-ins:156810766b2e870ff15329801f943416&#34;&gt;Other Plug-ins:&lt;/h3&gt;
+&lt;li&gt;&lt;h3 id=&#34;other-plug-ins:e880b6c8609ceda26d24953959211e17&#34;&gt;Other Plug-ins:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://packagecontrol.io/packages/BracketGuard&#34;&gt;Bracket Guard&lt;/a&gt;&lt;/li&gt;
@@ -112,7 +112,7 @@ you may end up in lots of issues.&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;reference-links:156810766b2e870ff15329801f943416&#34;&gt;Reference Links:&lt;/h3&gt;
+&lt;h3 id=&#34;reference-links:e880b6c8609ceda26d24953959211e17&#34;&gt;Reference Links:&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://realityloop.com/blog/2014/03/05/drupal-development-using-sublime-text-3-5-steps&#34;&gt;RealityLoop Article&lt;/a&gt;&lt;/li&gt;
