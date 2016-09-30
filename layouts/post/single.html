@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    {{ partial "header" . }}
+    <link rel="stylesheet" href="/css/single-page.css" />
+</head>
+<body class="single">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        {{ $.Scratch.Set "shareNav" true }}
+        {{ partial "navbar" . }}
+        <!-- Main -->
+        <div id="main">
+         <!-- Post -->
+         {{ $.Scratch.Set "h1" true }}
+         {{ .Render "content-single" }}
+     </div>
+ </div>
+ {{ partial "footer" . }}
+ {{ partial "share-menu" . }}
+</body>
+</html>

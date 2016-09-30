@@ -1,0 +1,19 @@
+#menu .search-menu {
+  padding-top: 6em;
+}
+
+#menu > * {
+  padding: 2em;
+}
+
+article.post h2 {
+    color: #eb4823;
+}
+
+article.post h3 {
+    color: #db4823
+}
+
+a {
+    cursor: pointer;
+}

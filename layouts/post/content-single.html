@@ -1,0 +1,28 @@
+<div class="blog-banner">
+    {{ .Render "featured" }}
+</div>
+<article class="post">
+    {{ .Render "header" }}
+    <section id="social-share">
+        <ul class="icons">
+            {{ partial "share-links" . }}
+        </ul>
+    </section>
+    <div id="content">
+        {{ .Content }}
+    </div>
+    <div class="category">
+        {{ .Render "footer-category" }}
+    </div>
+    {{ .Render "prev-next" }}
+</article>
+<div class="footer">
+    {{ partial "sidebar" . }}
+</div>
+{{ if ne .Site.DisqusShortname "" }}
+{{ if not (in (printf "%#v" .Site.BaseURL) "localhost") }}
+<article class="post">
+    {{ template "_internal/disqus.html" . }}
+</article>
+{{ end }}
+{{ end }}

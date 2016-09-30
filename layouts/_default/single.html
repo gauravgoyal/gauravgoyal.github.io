@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    {{ partial "header" . }}
+</head>
+<body>
+    <!-- Wrapper -->
+    <div id="wrapper">
+        {{ $.Scratch.Set "shareNav" true }}
+        {{ partial "navbar" . }}
+        <!-- Main -->
+        <div id="main">
+            <article class="post">
+                {{ $.Scratch.Set "h1" true }}
+                {{ .Render "header" }}
+                <div id="content">
+                    {{ .Content }}
+                </div>
+            </article>
+        </div>
+        {{ partial "sidebar" . }}
+    </div>
+    {{ partial "footer" . }}
+</body>
+</html>

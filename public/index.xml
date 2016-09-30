@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>The Last Anecdote</title>
+    <link>http://thelastanecdote.com/</link>
+    <description>Recent content on The Last Anecdote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jun 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://thelastanecdote.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Sublime Text 3 Setup for Drupal</title>
+      <link>http://thelastanecdote.com/blog/sublime/</link>
+      <pubDate>Thu, 30 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://thelastanecdote.com/blog/sublime/</guid>
+      <description>
+
+&lt;h2 id=&#34;download-sublime-text:156810766b2e870ff15329801f943416&#34;&gt;Download Sublime text.&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Download latest version / build of sublime text from &lt;a href=&#34;https://www.sublimetext.com/3&#34;&gt;website&lt;/a&gt;. At the time of writing this blog we have build 3114 of ST3.&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://packagecontrol.io/installation&#34;&gt;Package Installer&lt;/a&gt;, this is the most important thing for sublime text.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;plugins:156810766b2e870ff15329801f943416&#34;&gt;Plugins:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&#34;sublime-php-companion:156810766b2e870ff15329801f943416&#34;&gt;Sublime PHP Companion&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An important thing which sets IDE&amp;rsquo;s apart from text editors is there goto definition functionality which was kind of missing in sublime text 2 but now it is included into the core of ST3.&lt;/li&gt;
+&lt;li&gt;In the top navigation goto tab, we&amp;rsquo;ll see a goto definition link and which works like any IDE&amp;rsquo;s out there.&lt;/li&gt;
+&lt;li&gt;Apart from the above &lt;a href=&#34;https://github.com/erichard/SublimePHPCompanion&#34;&gt;Sublime PHP Companion&lt;/a&gt; plug-ins lots of other IDE&amp;rsquo;s functionality out of the box.&lt;/li&gt;
+&lt;li&gt;Now, I want to have my &lt;code&gt;cmd + click&lt;/code&gt; key binded to goto definition action so for that I followed the instruction given &lt;a href=&#34;https://gist.github.com/kendellfab/6135193&#34;&gt;in this gist&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Until you create a project, sublime&amp;rsquo;s inbuilt indexing does not works.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h3 id=&#34;sublime-php-cs:156810766b2e870ff15329801f943416&#34;&gt;Sublime PHP CS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Install &lt;a href=&#34;http://benmatselby.github.io/sublime-phpcs&#34;&gt;sublime phpcs&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://www.drupal.org/node/1419988&#34;&gt;Code Sniffer and Drupal&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you are installing codesniffer for the first time, it works well. But when you try to upgrade the previous version
+you may end up in lots of issues.&lt;/li&gt;
+&lt;li&gt;In my case, I wanted to install &lt;code&gt;Coder&lt;/code&gt; for &lt;code&gt;Drupal 8&lt;/code&gt;  and I ended up in &lt;code&gt;dependency&lt;/code&gt; problems.&lt;/li&gt;
+&lt;li&gt;Solution in my case was to remove install instructions (manually) from &lt;code&gt;composer.lock&lt;/code&gt; file and then reinstall.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;We can do the sniffing work by creating a build but PHP CS comes with lots of things which works out of the box.&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h3 id=&#34;xdebug-client:156810766b2e870ff15329801f943416&#34;&gt;Xdebug Client&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Xdebug&lt;/code&gt; is a brilliant tool for debugging and it seamlessly integrates with Sublime Text.&lt;/li&gt;
+&lt;li&gt;Install &lt;a href=&#34;https://github.com/martomo/SublimeTextXdebug&#34;&gt;Xdebug Client&lt;/a&gt; to start debugging.&lt;/li&gt;
+&lt;li&gt;Now, Let&amp;rsquo;s configure &lt;code&gt;Xdebug Client&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Open your project file. &lt;code&gt;foobar.sublime-project&lt;/code&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Add the following snippet:&lt;br /&gt;
+&lt;em&gt;NOTE:&lt;/em&gt; YOUR_REMOTE_PATH &amp;amp; YOUR_LOCAL_PATH will be same if you are not debugging remotely. If you debug remotelyit is mandatory to specify path mapping otherwise you will end up in no result.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Install &lt;code&gt;Xdebug&lt;/code&gt;:&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;sudo apt-get install php5-dev&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;pecl install xdebug&lt;/code&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For other methods, checkout &lt;a href=&#34;https://xdebug.org/docs/install&#34;&gt;Xdebug Install&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Configure Xdebug.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;    {
+        &amp;quot;folders&amp;quot;:
+        [
+            {
+                &amp;quot;follow_symlinks&amp;quot;: true,
+                &amp;quot;path&amp;quot;: &amp;quot;.&amp;quot;
+            }
+        ],
+        &amp;quot;settings&amp;quot;: {
+            &amp;quot;xdebug&amp;quot;: {
+                 &amp;quot;url&amp;quot;: &amp;quot;YOUR_URL&amp;quot;,
+                 &amp;quot;path_mapping&amp;quot;: {&amp;quot;YOUR_REMOTE_PATH&amp;quot; : &amp;quot;YOUR_LOCAL_PATH&amp;quot;},
+            }
+        }
+    } 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;NOTE:&lt;/em&gt; You can configure configure &lt;code&gt;Xdebug&lt;/code&gt; to work remotely also and locally also. Depending on your need configuration will change.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;h3 id=&#34;other-plug-ins:156810766b2e870ff15329801f943416&#34;&gt;Other Plug-ins:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://packagecontrol.io/packages/BracketGuard&#34;&gt;Bracket Guard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/facelessuser/BracketHighlighter&#34;&gt;Bracket Highlighter&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Warin/Sublime/tree/master/DocBlockr&#34;&gt;DocBlockr&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://packagecontrol.io/packages/Git&#34;&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://packagecontrol.io/packages/SassBeautify&#34;&gt;Sass Beautify&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://packagecontrol.io/packages/Pretty%20YAML&#34;&gt;Pretty YAML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://packagecontrol.io/packages/SyncedSideBar&#34;&gt;SyncedSidebar&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://packagecontrol.io/packages/MarkdownEditing&#34;&gt;Markdown Editing&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Drupal Configuration&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Follow the instruction given here in the &lt;a href=&#34;https://www.drupal.org/node/1346890&#34;&gt;documentation&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;reference-links:156810766b2e870ff15329801f943416&#34;&gt;Reference Links:&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://realityloop.com/blog/2014/03/05/drupal-development-using-sublime-text-3-5-steps&#34;&gt;RealityLoop Article&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://mattstauffer.co/blog/sublime-text-3-for-php-developers&#34;&gt;Mattstuaffer&amp;rsquo;s Blog&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://purencool.com/installing-xdebug-on-ubuntu&#34;&gt;Xdebug Install on Ubuntu&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;NOTE:&lt;/em&gt; Please let me know in comments if you face any problem is sublime text configuration or if you know any
+interesting plugin which everyone should use. :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Get Set Go!</title>
+      <link>http://thelastanecdote.com/blog/launch/</link>
+      <pubDate>Thu, 23 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://thelastanecdote.com/blog/launch/</guid>
+      <description>
+
+&lt;p&gt;Here we go.. my long awaited DNS finally got engaged with an IP.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-s-this:9298a2306a362a0af613ebc3c12425f7&#34;&gt;What&amp;rsquo;s this?&lt;/h2&gt;
+
+&lt;p&gt;Umm.. Anecdotes :)&lt;/p&gt;
+
+&lt;h2 id=&#34;how-it-happened:9298a2306a362a0af613ebc3c12425f7&#34;&gt;How it happened?&lt;/h2&gt;
+
+&lt;p&gt;Well, I was sitting idle from past few days and surfing through web in search of some interesting tasks. Suddenly, a thought crossed my mind that I purchased a domain few months back. Why not build it, and this is how it happened.&lt;/p&gt;
+
+&lt;p&gt;Well, this is for now. I had some wonderful time creating this site, and learnt about few new things. I&amp;rsquo;ll share them in my next post.&lt;/p&gt;
+
+&lt;p&gt;Till then bbye :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>About Hugo</title>
+      <link>http://thelastanecdote.com/about/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://thelastanecdote.com/about/</guid>
+      <description>
+
+&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/spf13&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;setup:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Some fun facts about &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Built in &lt;a href=&#34;http://golang.org/&#34;&gt;Go&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Loosely inspired by &lt;a href=&#34;http://jekyllrb.com/&#34;&gt;Jekyll&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Primarily developed by &lt;a href=&#34;http://spf13.com/&#34;&gt;spf13&lt;/a&gt; on the train while commuting to and from Manhattan.&lt;/li&gt;
+&lt;li&gt;Coded in &lt;a href=&#34;http://vim.org&#34;&gt;Vim&lt;/a&gt; using &lt;a href=&#34;http://vim.spf13.com/&#34;&gt;spf13-vim&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Have questions or suggestions? Feel free to &lt;a href=&#34;https://github.com/spf13/hugo/issues/new&#34;&gt;open an issue on GitHub&lt;/a&gt; or &lt;a href=&#34;https://twitter.com/spf13&#34;&gt;ask me on Twitter&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
