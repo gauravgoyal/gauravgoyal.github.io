@@ -1,9 +1,18 @@
 #menu .search-menu {
-  padding-top: 6em;
+  padding-top: 5em;
 }
 
 #menu > * {
-  padding: 2em;
+  padding: 1em 3em 1em 3em;
+}
+
+#menu .links > li {
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
+}
+
+#menu .links h3 {
+  margin: 1em 0 0 0;
 }
 
 article.post h2 {
