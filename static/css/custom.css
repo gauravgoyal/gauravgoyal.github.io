@@ -17,3 +17,22 @@ article.post h3 {
 a {
     cursor: pointer;
 }
+
+@media screen and (max-width: 736px) {
+  body {
+    padding-top: 2.75em;
+  }
+}
+
+body, input, select, textarea, b, strong {
+  color: #384847;
+  letter-spacing: 2px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5em 0;
+}
+
+#header h2 {
+  margin: 0 0 1.5em 0;
+}
