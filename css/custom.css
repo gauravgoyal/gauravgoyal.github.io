@@ -49,3 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 .post > header .title {
   padding: 1em 1em 1em 3em;
 }
+
+body.is-menu-visible #main {
+    opacity: .15;
+}
