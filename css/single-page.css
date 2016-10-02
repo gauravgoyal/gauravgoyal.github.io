@@ -26,42 +26,17 @@ body {
     padding: 0;
   }
 
-  .post > header .title h1 {
-    font-size: 1.6em;
-  }
-
   .post > header {
     left: 0;
     width: auto;
   }
 
-  .post > header .meta {
-    width: auto;
-  }
-
-  .post > header,  .post{
+  .post{
     border: 0;
-  }
-
-  .post > header, .post > header .title, .post > header .meta  {
-    margin: 0;
-    padding: 0;
-  }
-
-  #social-share {
-    text-align: left;
-    top: 0;
-    padding: 3em 0;
-    display: flex;
-    border-bottom: solid 1px rgba(160, 160, 160, 0.3);
   }
 
   #content {
     margin-top: 3em;
-  }
-
-  #social-share ul {
-    flex-grow: 1;
   }
 
   .post .category .stats {
@@ -116,15 +91,6 @@ body {
     border: 0;
     margin: 0;
     padding: 2em;
-    width: 30%;
-  }
-
-  #sidebar #intro {
-    width: 40%;
-  }
-
-  #intro header h2 {
-    margin: 1em 0;
   }
 }
 

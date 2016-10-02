@@ -10,6 +10,7 @@
             <p>{{ . }}</p>
         {{ end }}
     </div>
+    <div class="meta-wrapper">
     <div class="meta">
         {{ if .Site.Params.orderByPublishDate }}
             {{ $.Scratch.Set "dateType" .PublishDate }}
@@ -25,5 +26,12 @@
             <p>{{ .ReadingTime }} minute read</p>
         {{ end }}
         <!--<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>-->
+    </div>
+
+    <div id="social-share">
+        <ul class="icons">
+            {{ partial "share-links" . }}
+        </ul>
+    </div>
     </div>
 </header>
