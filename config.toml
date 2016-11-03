@@ -69,12 +69,6 @@ alt       = "Gaurav Goyal | Author"
     identifier = "fa fa-th"
     weight = 2
 
-[[menu.main]]
-    name = "About"
-    url = "/about"
-    identifier = "fa fa-user"
-    weight = 3
-
 # Insert your username and the icon will apear on the page as long as
 # socialAppearAtTop or socialAppearAtBottom is set to true in the params area
 # The social media icons will appear on the sidebar
